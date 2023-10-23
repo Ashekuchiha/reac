@@ -1,0 +1,12 @@
+1.props for function(function er jonnon props.Vname dilayi valu show koray) and class(class er jonno this.props.Vname dilay valu show koray)
+2.state only for class(this.state.Vname)(we only use this in class not in function )
+3.hooks only for function (
+    const [name,fun]=useState("ashik");
+    const [age]=useState(24);
+    thats how u creat a Vname and valu.
+)
+4.event bubbling :event.stopPropagation();
+5.preventDeafault()
+6.in react function component the function name have to be imported and the function name will be the component name.all the charecter of function name should be capiter latter.
+7.formik npm install formik
+

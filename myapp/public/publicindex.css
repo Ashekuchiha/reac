@@ -1,0 +1,25 @@
+.mypublic-style{
+    background-color: purple;
+    color: whitesmoke;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+.card{
+    background-color: burlywood;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.card-title{
+    color: rgb(188, 117, 117);
+}
+.icon{
+    font-size: 3rem;
+    margin-right: 10px;
+}

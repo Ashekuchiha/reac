@@ -1,0 +1,107 @@
+1.distructuring
+2.component (function,class)
+3.props
+4. push ,maping (unique id) ,nested maping
+5.how react work under the hood
+6.react icon
+7.bootstrap in react
+8.******state ,etState 
+9.event handeling(onClick,onChange)
+10.conditional rendaring
+11.event binding :this.handelClick.bind(this) in constructor.error function use korly etar use dorkar nai.
+12.useState.setState,update state based on previous state.setCount((count)=>{count+1}); , obj passing in useSet.
+13.event bubbling:event.stoppropagation();
+14.passing data from child to parent
+15.video 33
+16.formik,yup
+17.toggle
+18.********useEffect (()=>{
+consol.log("hi");
+})---everytime
+
+useEffect (()=>{
+consol.log("hi");
+},[])---just for first time.
+
+useEffect (()=>{
+consol.log("hi");
+},[togol])---togol update holay useEffect o update hobay.
+
+19.creat custom hooks
+20.npm i react-toastify
+21.dynamic style: video 47
+22.<React.fragment>ghgfgh</>
+23 props types,defaultprops video 49
+24.video 50.kon function kokhon call hoi.
+25.*******creatRef:video 51--6min:myapp2 
+26.************useRef/useReducer hook creatRef er hook creat kora :video56
+27.prop drilling:video 57:comp1(data)->comp2(data)->comp3(data)->comp4(data)
+28.******UserContext=React.creatcccontext();
+{creat:
+    export const UserContext=React.creatContext();//import this variable in every component
+warping:
+    <UserContext.Provider value={obj}>
+    <comp2>
+    </UserContext.Provider>
+call:
+    {useContext}
+    const recivedData=useContext(UserContext);
+}
+29.video 59.***
+30.routing:video 60:
+***************IMPORTENT NEED EVERY TIME*********************
+npm install react-router-dom
+<BrowserRouter>
+<Routers>
+<Router path="/" element={<Hone/>} />
+<Router path="/blog" element={<blog/>} />
+<Router path="*" element={<Error/>} />
+</Routers>
+</BrowserRouter>
+
+video:62=>
+make acomponent <NavBar/>
+body of NavBar Component:
+<nav>
+<NavLink to="/"> HOme</NavLink>
+
+
+</nav>
+style:
+nav{
+    height:
+    bg-color:
+    display:flex
+    justyfy-content:center
+    align-items:center
+}
+.nav-link{
+    color :
+    margen:
+    text-decoration:none;
+}
+.nav-link:hover{
+    color:
+}
+nav .active{
+    color:
+}
+
+import {useNavigate} from "react-router-dom";
+const navvv=useNavigate();
+<button onclick={()=>navvvv("/")}>go Home</button>
+
+
+video 63/64/ importent for blog site.....
+(useParams ekta hook)=>react router dom use for dynamic routing
+(useLocation ekta hook)=>react router dom use for stat e data passing
+(useSearchParams ekta hook)=>react router dom use for stat e data passing
+
+video:65 importent for database conection
+rout peramettar k access kortay hoi useParams.
+query peramettaer 
+  video 69: alada alada page er alada titel er jonno react helmet npm .
+
+
+
+

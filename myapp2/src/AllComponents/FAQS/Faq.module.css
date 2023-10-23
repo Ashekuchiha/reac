@@ -1,0 +1,25 @@
+h2{
+    color: rgb(92, 91, 91);
+    margin:10px 50% 10px 50%;
+    padding-top: 20px;
+}
+.main1{
+    background-color: rgb(107, 150, 187);
+    margin: 2% 5% 2% 5%;
+    padding-bottom: 10px;
+}
+.main2{
+    text-align: center;
+}
+.main3{
+    margin: 20px 0px 0px 0px;
+}
+.main4{
+    background-color: aliceblue;
+    border-bottom: 6px solid rgb(17, 97, 162);
+    margin-right: 2%;
+    padding: 2px 50px 2px 50px;
+}
+.main4:hover{
+    background-color:rgb(126, 192, 77) ;
+}
