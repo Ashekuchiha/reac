@@ -83,7 +83,28 @@
   // }
   // root.render(<Clock locale="bn-BD"/>);
 }
-
+{//functional component with hook or useState
+  const root = ReactDOM.createRoot(
+    document.getElementById('root')
+  );
+  const TemperatureInput =()=>{
+    const [temp,setTemp] = React.useState("0");
+    return (
+        <div>
+            <fieldset>
+                <legend>enter the temperature</legend>
+                <input
+                  type="text"
+                  value={temp}
+                  onChange={(e)=>setTemp(e.target.value)}
+                />
+                <p>{temp}</p>
+            </fieldset>
+        </div>
+    );
+}
+  root.render(<TemperatureInput />);
+}
 {//class
   // const root = ReactDOM.createRoot(
   //   document.getElementById('root')
@@ -211,55 +232,55 @@
 }
 
 {//class component with state and event
-  const root = ReactDOM.createRoot(
-    document.getElementById('root')
-  );
+//   const root = ReactDOM.createRoot(
+//     document.getElementById('root')
+//   );
 
-  class Clock extends React.Component {
-    constructor(props) {
-    super(props);
+//   class Clock extends React.Component {
+//     constructor(props) {
+//     super(props);
 
-    // Initialize the state
-    this.state = {
-      date: new Date(),
-      locale:'bn-BD',
-    };
-  }
-  //state = { date: new Date() };//sortcut of construtor
+//     // Initialize the state
+//     this.state = {
+//       date: new Date(),
+//       locale:'bn-BD',
+//     };
+//   }
+//   //state = { date: new Date() };//sortcut of construtor
 
-    componentDidMount() {
-        this.clockTimer = setInterval(() => this.tick(), 1000);
-    }
+//     componentDidMount() {
+//         this.clockTimer = setInterval(() => this.tick(), 1000);
+//     }
 
-    componentWillUnmount() {
-        clearInterval(this.clockTimer);
-    }
+//     componentWillUnmount() {
+//         clearInterval(this.clockTimer);
+//     }
 
-    tick=()=> {
-        this.setState({
-            date: new Date(),
-        });
-    }
+//     tick=()=> {
+//         this.setState({
+//             date: new Date(),
+//         });
+//     }
 
-    chng=(locale)=>{//arrow function this er problem dur kory
-      this.setState({
-        locale,
-      })
-    }
+//     chng=(locale)=>{//arrow function this er problem dur kory
+//       this.setState({
+//         locale,
+//       })
+//     }
 
-    render() {
-      const { date } = this.state;
-      const { locale } = this.state;
-      return (
-        <>
-          <h1 className="heading">
-            <span className="text">{date.toLocaleTimeString(locale)}</span>
-          </h1>
-          <button onClick={()=>{this.chng("en-US")}}>change the clock language</button>
-        </>
-      );
-    }
-}
-root.render(<Clock/>);
+//     render() {
+//       const { date } = this.state;
+//       const { locale } = this.state;
+//       return (
+//         <>
+//           <h1 className="heading">
+//             <span className="text">{date.toLocaleTimeString(locale)}</span>
+//           </h1>
+//           <button onClick={()=>{this.chng("en-US")}}>change the clock language</button>
+//         </>
+//       );
+//     }
+// }
+// root.render(<Clock/>);
 
 }
